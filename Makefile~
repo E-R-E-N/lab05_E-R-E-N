@@ -1,0 +1,6 @@
+CXX_FLAG = --std=c++11 -g
+
+all: evalfull
+
+evalfull: evalfull.o intstack.o
+	g++ $(CXX_FLAG) -o evalfull evalfull.o intbst.o
